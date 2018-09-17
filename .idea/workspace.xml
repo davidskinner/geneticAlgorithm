@@ -2,26 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb3d619c-b116-4e6f-917c-a6a26ca72409" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/geneticAlgorithm.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Controller.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Game.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/IAgent.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Json.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Matrix.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Model.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/NeuralAgent.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/NeuralNet.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/ReflexAgent.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Vec.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/View.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/broken.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/build.bash" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/flag_blue.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/flag_red.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/metal_doing.wav" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/robot_blue.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/robot_red.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/terrain.png" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/out/production/geneticAlgorithm/Model$Bomb.class" afterPath="$PROJECT_DIR$/out/production/geneticAlgorithm/Model$Bomb.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/geneticAlgorithm/Model$Sprite.class" afterPath="$PROJECT_DIR$/out/production/geneticAlgorithm/Model$Sprite.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/geneticAlgorithm/Model.class" afterPath="$PROJECT_DIR$/out/production/geneticAlgorithm/Model.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/geneticAlgorithm/View$MyPanel.class" afterPath="$PROJECT_DIR$/out/production/geneticAlgorithm/View$MyPanel.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/geneticAlgorithm/broken.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/geneticAlgorithm/flag_blue.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/geneticAlgorithm/flag_red.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/geneticAlgorithm/robot_blue.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/geneticAlgorithm/robot_red.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/geneticAlgorithm/terrain.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Model.java" afterPath="$PROJECT_DIR$/src/Model.java" />
+      <change beforePath="$PROJECT_DIR$/src/View.java" afterPath="$PROJECT_DIR$/src/View.java" />
+      <change beforePath="$PROJECT_DIR$/src/broken.png" afterPath="$PROJECT_DIR$/images/broken.png" />
+      <change beforePath="$PROJECT_DIR$/src/flag_blue.png" afterPath="$PROJECT_DIR$/images/flag_blue.png" />
+      <change beforePath="$PROJECT_DIR$/src/flag_red.png" afterPath="$PROJECT_DIR$/images/flag_red.png" />
+      <change beforePath="$PROJECT_DIR$/src/robot_blue.png" afterPath="$PROJECT_DIR$/images/robot_blue.png" />
+      <change beforePath="$PROJECT_DIR$/src/robot_red.png" afterPath="$PROJECT_DIR$/images/robot_red.png" />
+      <change beforePath="$PROJECT_DIR$/src/terrain.png" afterPath="$PROJECT_DIR$/images/terrain.png" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,11 +32,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Model.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Model.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Model.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+            <state relative-caret-position="111">
+              <caret line="46" column="29" lean-forward="false" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="View.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/View.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="137">
+              <caret line="93" column="15" lean-forward="false" selection-start-line="93" selection-start-column="15" selection-end-line="93" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -45,12 +56,24 @@
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>image</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
       <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/Model.java" />
+      </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -107,6 +130,10 @@
     <property name="aspect.path.notification.shown" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/images" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
     </key>
@@ -193,12 +220,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1537144587027</updated>
-      <workItem from="1537144590213" duration="323000" />
+      <workItem from="1537144590213" duration="611000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="323000" />
+    <option name="totallyTimeSpent" value="611000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="878" extended-state="0" />
@@ -268,10 +295,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/images/terrain.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Model.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+        <state relative-caret-position="111">
+          <caret line="46" column="29" lean-forward="false" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="93" column="15" lean-forward="false" selection-start-line="93" selection-start-column="15" selection-end-line="93" selection-end-column="15" />
           <folding />
         </state>
       </provider>

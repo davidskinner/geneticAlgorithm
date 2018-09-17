@@ -1,9 +1,7 @@
 // The contents of this file are dedicated to the public domain.
 // (See http://creativecommons.org/publicdomain/zero/1.0/)
 
-import java.awt.Graphics;
 import java.io.File;
-import java.util.Random;
 import java.util.ArrayList;
 import java.awt.image.BufferedImage;
 import java.awt.image.DataBufferByte;
@@ -46,7 +44,7 @@ class Model {
 	}
 
 	void initGame() throws Exception {
-		BufferedImage bufferedImage = ImageIO.read(new File("terrain.png"));
+		BufferedImage bufferedImage = ImageIO.read(new File("images/terrain.png"));
 		if(bufferedImage.getWidth() != 60 || bufferedImage.getHeight() != 60)
 			throw new Exception("Expected the terrain image to have dimensions of 60-by-60");
 		terrain = ((DataBufferByte)bufferedImage.getRaster().getDataBuffer()).getData();

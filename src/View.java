@@ -87,11 +87,11 @@ public class View extends JFrame implements ActionListener {
 		MySoundClip sound_doing;
 
 		MyPanel() throws Exception {
-			this.image_robot_blue = ImageIO.read(new File("robot_blue.png"));
-			this.image_robot_red = ImageIO.read(new File("robot_red.png"));
-			this.image_broken = ImageIO.read(new File("broken.png"));
-			this.image_flag_blue = ImageIO.read(new File("flag_blue.png"));
-			this.image_flag_red = ImageIO.read(new File("flag_red.png"));
+			this.image_robot_blue = ImageIO.read(new File("images/robot_blue.png"));
+			this.image_robot_red = ImageIO.read(new File("images/robot_red.png"));
+			this.image_broken = ImageIO.read(new File("images/broken.png"));
+			this.image_flag_blue = ImageIO.read(new File("images/flag_blue.png"));
+			this.image_flag_red = ImageIO.read(new File("images/flag_red.png"));
 			this.sound_doing = new MySoundClip("metal_doing.wav", 3);
 		}
 
