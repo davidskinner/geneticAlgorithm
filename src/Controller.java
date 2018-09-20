@@ -168,9 +168,9 @@ class Controller implements MouseListener
 		while(c.update()) { }
 		c.model.setPerspectiveBlue(c.secret_symbol);
 		if(c.model.getFlagEnergySelf() < 0.0f && c.model.getFlagEnergyOpponent() >= 0.0f)
-			return -1;
+			return -1 * (int)c.getIter();
 		else if(c.model.getFlagEnergyOpponent() < 0.0f && c.model.getFlagEnergySelf() >= 0.0f)
-			return 1;
+			return (int)c.getIter();
 		else
 			return 0;
 	}
