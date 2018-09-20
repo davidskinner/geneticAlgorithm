@@ -1,3 +1,5 @@
+import jdk.nashorn.api.scripting.JSObject;
+
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -10,7 +12,7 @@ class Game
 		for (int i = 0; i < pop.rows(); i++) {
 			double[] individual = pop.row(i);
 			for(int j = 0; j < individual.length; j++)
-				individual[j] = 0.09 * r.nextGaussian();
+				individual[j] = .09 * r.nextGaussian();//around .09 is a good starting number
 		}
 		return pop;
 	}
@@ -125,7 +127,23 @@ class Game
 	static double[] evolveWeights()
 	{
 
+		//meta parameters
+		// 80% mut
+		//10 torn
+		// 1.5 mut dev
+		// winner .9
+
+		// SR .9
+		//0.27
+		//mut dev 11
+		// 999 gen
+		//< 3 mins
+
+		//gashler weights 2 = 0.1 * rand.nextGaussian()
+
+
 		// Create a random initial population
+
 		Matrix population = new Matrix(100, 291);
 		population = Initialmutate(population);
 
@@ -142,7 +160,7 @@ class Game
 			int chadPosition = -1;
 			boolean postChad = false;
 
-			ArrayList<Integer> footballTeam = new ArrayList<>();
+//			ArrayList<Integer> footballTeam = new ArrayList<>();
 
 			// fitness function
 			for (int i = 0; i < 1000; i++) {
@@ -177,7 +195,7 @@ class Game
 									postChad = true;
 									System.out.println("we have a chad!" + " " + String.valueOf(-1 * winnerVal) + " " + String.valueOf(j));
 
-									population = cloneChad(population.row(chadPosition));
+//									population = cloneChad(population.row(chadPosition));
 
 									// crossover the Chad with 95% of the population
 									//repopulate world with chads
@@ -214,6 +232,11 @@ class Game
 //									}
 								}
 							}
+						}
+
+						if(postChad)
+						{
+							break;
 						}
 
 						
@@ -265,7 +288,7 @@ class Game
 					{
 						System.out.println(String.valueOf(e));
 					}
-				System.out.println(String.valueOf(winnerVal)+ " " + String.valueOf(i % 100) + " " + population.row(i %100)[0]+ " " + String.valueOf(footballTeam.size()));
+				System.out.println(String.valueOf(winnerVal)+ " " + String.valueOf(i % 100) + " " + population.row(i %100)[0]); //+ " " + String.valueOf(footballTeam.size()
 
 			}
 
@@ -346,15 +369,35 @@ class Game
 		//       (For tournament selection, you will need to call Controller.doBattleNoGui(agent1, agent2).)
 
 		// Return an arbitrary member from the population
+		//wrap up double array to json file
+		Json j = Json.newList();
+
+		for (int i = 0; i < population.cols(); i++) {
+			j.add(population.row(chadPosition)[i]);
+		}
+
+		j.save("chad.json");
+
+
 		return population.row(chadPosition);
 	}
 
 
 	public static void main(String[] args) throws Exception
 	{
-		double[] w = evolveWeights();
+		//read in json file and build array.
 
-//		Controller.doBattle(new ReflexAgent(), new NeuralAgent(w));
+//		double[] w = evolveWeights();
+		double[] chad = new double[291];
+		Json j = Json.load("chad.json");
+		Json js = Json.parse(j.toString());
+		for (int i = 0; i < chad.length; i++) {
+			chad[i] = js.get(i).asDouble();
+		}
+
+
+
+		Controller.doBattle(new ReflexAgent(), new NeuralAgent(chad));
 	}
 
 }
