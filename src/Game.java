@@ -381,12 +381,10 @@ class Game
 
 		return population.row(chadPosition);
 	}
-
-
+	
 	public static void main(String[] args) throws Exception
 	{
 		//read in json file and build array.
-
 //		double[] w = evolveWeights();
 		double[] chad = new double[291];
 		Json j = Json.load("chad.json");
@@ -394,10 +392,6 @@ class Game
 		for (int i = 0; i < chad.length; i++) {
 			chad[i] = js.get(i).asDouble();
 		}
-
-
-
 		Controller.doBattle(new ReflexAgent(), new NeuralAgent(chad));
 	}
-
 }
